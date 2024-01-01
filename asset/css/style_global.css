@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600;700&family=Pacifico&family=Sansita+Swashed:wght@300;600&display=swap');
+@import url('style__nav.css');
+@import url('style__footer.css');
+@import url('/asset/forntawesome/css/all.css');
+@import url('style_anitation.css');
+:root{
+    --font-family-Inter: 'Inter', sans-serif;
+    --font-family-Sansita:'Sansita Swashed','Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, cursive;
+    --font-family-Pacifico:'Pacifico','Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, cursive;
+    /* font_sizing */
+    --font-sizing-tn:19px;
+    --font-sizing-hG:8em;
+    --font-sizing-hM:5em;
+    --font-sizing-h1:3em;
+    --font-sizing-h-tx:16px;
+    --font-sizing-h-txM:15px;
+    --font-sizing-h-txm:10px;
+    /* end font_sizing */
+
+    /* font_color */
+    --color-text:#FFFFFF;
+    --color-text--bc:rgb(33, 134, 198);
+    /* background_color */
+    --bg-1-color:#4400ff;
+    --bg-2-color: rgba(86, 89, 255, 0.116);;
+    --bg-3-color: rgb(21, 0, 97);
+    /* background_color_fin */
+}
+
+*,::after,::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    list-style-type:none;
+    outline: none;
+}
+
+html{
+    scroll-behavior: smooth;
+    height:100%;
+}
+
+body{
+    display: flex;
+    flex-flow: column nowrap;
+    width: 100%;
+    min-height: 100%;
+    background:url('../img/bg/bg_main_Mesa.png')  no-repeat center  /cover fixed;
+}
+
+::-webkit-scrollbar{
+    width: .4em;
+}
+
+::-webkit-scrollbar-track{
+    background-color: var(--color-text--bc);
+    border-radius: 100vw;
+    margin-block: .5em;
+    margin-inline: 1em;
+}
+
+::-webkit-scrollbar-thumb{
+    background: var(--bg-1-color);
+    border-radius: 100vw;
+}
+::-webkit-scrollbar-thumb:hover{
+    background: var(--bg-3-color);
+}

@@ -1,0 +1,219 @@
+@import url('style_global.css');
+
+
+.background__video{
+    top: 0;
+    left: 0;
+    height: 100%;
+    width:100%;
+    overflow: hidden;
+    z-index: -10;
+    position: fixed;
+    opacity: .5;
+}
+.background__video video{
+    height: 100%;
+    width: 100%;
+    z-index: -10;
+    position: relative;
+    scale: 2.2;
+}
+
+.background__video::before{
+    content:"";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -9px;
+    top: 0;
+    left: 0;
+    background-color: rgba(90, 115, 255, 0.582);
+}
+
+#contact{
+    width: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow:column nowrap;
+    position: relative;
+}
+
+.contact__contener:hover{
+    box-shadow: 0px 0px 5px 5px var(--color-text--bc) ;
+}
+.contact__contener{
+    height: 500px;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    flex-flow: nowrap row;
+    align-content: center;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.39);
+    margin: 100px 0;
+    box-shadow: 0px 0px 5px 1px white;
+    transition: all ease-in .2s;
+}
+.contact__contener figure{
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+}
+.contact__contener figure img{
+    width: 100%;
+    height: 100%;
+}
+.contact__contener form{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+    gap: 1px;
+
+}
+
+.contact__form__fieldset{
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: none;
+    border-top: dashed 4px var(--color-text--bc);
+}
+
+legend{
+    font-size: 1em;
+    text-align: center;
+}
+
+#contact__h2{
+    color: var(--bg-3-color);
+    text-align: center;
+    font-weight: 400;
+    font-family: var(--font-family-Inter);
+}
+
+#contact__consigne{
+    font-size: .7em;
+    text-align: center;
+    padding: 10px;
+    letter-spacing: 2px;
+}
+
+.form__group__contact{
+    display: flex;
+    width: 100%;
+    padding: 20px 0px;
+    justify-content: space-between;
+}
+
+label{
+    font-size: 1em;
+    color:var(--bg-3-color);
+    cursor: pointer;
+    font-family:var(--font-family-Sansita) ;
+}
+
+input,select,input:active{
+    width: 50%;
+    padding: 5px;
+    overflow: hidden;
+    caret-color: rgba(50, 50, 255, 0.425);
+    font-size: .9rem ;
+    position:relative;
+    border: none;
+    background:none;
+    color:var(--bg-3-color);
+    border-bottom: solid 1px rgba(255, 255, 255, 0.226);
+    filter:drop-shadow(0px 0px 3px rgb(90, 142, 255));
+    font-family: var(--font-family-Sansita);
+    z-index: 1;
+    transition: ease-in-out .5s;
+}
+
+input:hover{
+    border-bottom: solid 1px rgba(0, 110, 255, 0.986);
+}
+
+select{
+    background: none;
+}
+
+option{
+    background: rgba(4, 0, 255, 0.897);
+    position: relative;
+    overflow:auto;
+    transition: all ease-in-out .5s;
+    font-family: var(--font-family-Sansita);
+}
+
+button{
+    border: solid 1px hsla(234, 100%, 50%, 0.274);
+    padding: 9px;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+    z-index: 10;
+    transition:all ease-out .5s;
+    scale: 1;
+    text-align: center;
+    width: 100px;
+    justify-self: center;
+    background: none;
+    font-size: 20px;
+    font-weight: bold;
+    transition: all ease .5s;
+    color: white;
+    background-color: blue;
+}
+
+button:hover{
+    filter: drop-shadow( 1px 1px 5px rgb(0, 0, 255));
+    color: rgb(22, 1, 61);
+}
+button::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    background:hsla(185, 100%, 50%, 0.274);
+    transform: scaleX(0);
+    transition:all ease-out .5s;
+}
+
+button:hover::before{
+    transform: scaleX(1);
+}
+
+button:active{
+    scale: .8;
+}
+
+.title__page__contact{
+    position: absolute;
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    top: -50px;
+    color: var(--color-text--bc);
+    backdrop-filter:blur(10px);
+    -webkit-backdrop-filter:blur(10px) ;
+    -moz-backdrop-filter:blur(10px);
+    -o-backdrop-filter:blur(10px);;
+    overflow: hidden;
+    font-family: var( --font-family-Sansita);
+    font-size: 2rem;
+    z-index: 10;
+    filter:drop-shadow(0 0 5px hsl(202, 100%, 50%));
+    opacity: 85%;
+}

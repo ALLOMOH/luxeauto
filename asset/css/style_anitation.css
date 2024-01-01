@@ -1,0 +1,46 @@
+
+/* ============================ gallerie ==================== */
+/* ============================ galleri_carrousel ============ */  
+
+@keyframes glisse {
+    0%,
+    6.25% {
+        transform: translateX(0px);
+    }
+    12.5%,    
+    18.75% {
+        transform: translateX(-700px);
+    }
+    25%,
+    31.25% {
+        transform: translateX(-1400px);
+    }
+    37.5%,
+    43.75% {
+        transform: translateX(-2100px);
+    }
+    50%,
+    56.25%
+    {
+        transform: translateX(-2800px);
+    }
+    62.5%,
+    68.75%
+    {
+        transform: translateX(-3500px);
+    }
+    75%,
+    81.25%
+    {
+        transform: translateX(-4200px);
+    }
+    87.5%,
+    87.5%
+    {
+        transform: translateX(-4900px);
+    }
+    100%
+    {
+        transform: translateX(0px);
+    }
+}
